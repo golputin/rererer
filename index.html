@@ -1,16 +1,86 @@
 <!DOCTYPE html><html lang="id"><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>REVI — Admin Rekber & Toko Game | viistore.id</title>
-<meta name="description" content="Revi Sri Mega Azzahra (viistore.id) — Admin Rekber & Toko Game terpercaya. Transaksi aman, proses cepat, pelayanan profesional.">
+<meta name="description" content="Revi Sri Mega Azzahra (viistore.id) — Admin Rekber & Toko Game terpercaya: rekber aman, cek akun penipu, jual-beli akun.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,800;1,700;1,800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+<style>
+:root{--bg:#07110f;--bg2:#0c1b18;--mint:#2ee6c0;--mint2:#17c9a5;--txt:#eafff9;--mut:#9cc0b7;--line:rgba(46,230,192,.22);--card:#0e211d;--r:18px}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:"Plus Jakarta Sans",system-ui,sans-serif;background:var(--bg);color:var(--txt);line-height:1.65;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(600px 300px at 85% -50px,rgba(46,230,192,.14),transparent 60%),radial-gradient(700px 400px at -100px 60%,rgba(23,201,165,.1),transparent 60%)}
+::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:var(--bg2)}::-webkit-scrollbar-thumb{background:var(--mint2);border-radius:99px}
+::selection{background:var(--mint);color:#04231c}
+img{max-width:100%;display:block}a{color:inherit;text-decoration:none}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+section{padding:74px 0}
+h1,h2,h3{font-style:italic;font-weight:800;line-height:1.15;text-transform:uppercase}
+h1 em,h2 em{color:var(--mint)}
+h2{font-size:clamp(1.6rem,4vw,2.4rem);text-align:center;letter-spacing:.5px}
+.sub{color:var(--mut);text-align:center;max-width:760px;margin:12px auto 34px}.sub b{color:var(--mint)}
+.nav{position:sticky;top:0;z-index:50;background:rgba(7,17,15,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px 20px;max-width:1100px;margin:auto}
+.logo{font-size:1.35rem;font-weight:800;font-style:italic}.logo span{color:var(--mint)}
+.menu{display:flex;align-items:center;gap:20px;font-weight:600;font-size:.92rem}
+.menu a:not(.btn){color:var(--mut);transition:.2s}.menu a:not(.btn):hover{color:var(--mint)}
+.burger{display:none;background:none;border:1px solid var(--line);color:var(--mint);font-size:1.2rem;border-radius:10px;padding:4px 12px;cursor:pointer}
+.btn{display:inline-block;background:linear-gradient(135deg,var(--mint),var(--mint2));color:#04231c;font-weight:800;padding:12px 22px;border-radius:999px;box-shadow:0 6px 22px rgba(46,230,192,.28);transition:.2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(46,230,192,.4)}
+.btn.ghost{background:transparent;color:var(--mint);border:1.5px solid var(--mint);box-shadow:none}
+.btn-sm{padding:8px 16px;font-size:.85rem}
+.hero{padding:70px 0 60px}.hero-in{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}
+.kick{color:var(--mint);font-weight:700;letter-spacing:3px;text-transform:uppercase;font-size:.8rem}
+.hero h1{font-size:clamp(2.1rem,5.4vw,3.6rem);margin:10px 0 16px}
+.hero h1 em{background:linear-gradient(120deg,var(--mint),#7cf7dd);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{color:var(--mut);max-width:520px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0 14px}
+.jam{font-size:.92rem;color:var(--mut)}.jam b{color:var(--mint)}
+.hero-img{position:relative}
+.hero-img img{border-radius:24px;border:1px solid var(--line);box-shadow:0 20px 60px rgba(0,0,0,.5);aspect-ratio:4/3;object-fit:cover;width:100%}
+.wm{position:absolute;right:-8px;bottom:-26px;font-size:4rem;font-weight:800;font-style:italic;color:rgba(46,230,192,.14);letter-spacing:2px;pointer-events:none}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:22px;transition:.25s}
+.card:hover{transform:translateY(-4px);border-color:var(--mint)}
+.card h3{font-size:1.05rem;margin-bottom:8px;color:var(--mint)}
+.card p{color:var(--mut);font-size:.94rem}
+.card a.more{color:var(--mint);font-weight:700;font-size:.9rem}
+.gal{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;max-width:760px;margin:0 auto}
+.gal figure{cursor:zoom-in;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);background:var(--card)}
+.gal img{aspect-ratio:3/4;object-fit:cover;width:100%;transition:.35s}
+.gal figure:hover img{transform:scale(1.05)}
+.gal figcaption{padding:10px 14px;font-size:.85rem;color:var(--mut);font-weight:600}
+.post{max-width:430px;margin:0 auto}
+.post figure{cursor:zoom-in;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);background:var(--card)}
+.post img{width:100%;transition:.35s}.post figure:hover img{transform:scale(1.03)}
+.lightbox{position:fixed;inset:0;z-index:90;background:rgba(3,10,8,.92);display:flex;align-items:center;justify-content:center;padding:24px}
+.lightbox[hidden]{display:none}
+.lightbox img{max-height:88vh;max-width:92vw;border-radius:14px;border:1px solid var(--mint);box-shadow:0 0 60px rgba(46,230,192,.25)}
+#lb-close{position:absolute;top:18px;right:18px;background:var(--card);border:1px solid var(--mint);color:var(--mint);font-size:1.1rem;width:44px;height:44px;border-radius:50%;cursor:pointer}
+.frm{max-width:640px;margin:0 auto;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:26px;display:grid;gap:14px}
+.frm label{font-size:.85rem;font-weight:700;color:var(--mint);display:block;margin-bottom:6px}
+.frm input,.frm select,.frm textarea{width:100%;background:var(--bg2);border:1px solid var(--line);border-radius:12px;color:var(--txt);padding:12px 14px;font:inherit;font-size:.95rem;outline:none;transition:.2s}
+.frm input:focus,.frm select:focus,.frm textarea:focus{border-color:var(--mint)}
+.frm textarea{min-height:110px;resize:vertical}
+.frm .btn{justify-self:center;border:none;cursor:pointer}
+.note{font-size:.85rem;color:var(--mut);background:rgba(46,230,192,.08);border:1px dashed var(--line);border-radius:12px;padding:10px 14px}
+.tips li{margin:0 0 10px 18px;color:var(--mut)}.tips li b{color:var(--txt)}
+.copy{text-align:center;color:var(--mut);font-size:.85rem;margin-top:34px}
+footer{padding:74px 0 40px;border-top:1px solid var(--line);margin-top:20px}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .6s ease,transform .6s ease}
+.reveal.on{opacity:1;transform:none}
+@media(max-width:860px){
+.hero-in{grid-template-columns:1fr}.hero-img{max-width:520px;margin:0 auto}
+.burger{display:block}
+.menu{position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:flex-start;background:rgba(7,17,15,.97);padding:18px 22px;gap:14px;display:none;border-bottom:1px solid var(--line)}
+.menu.open{display:flex}
+}
+</style>
 </head><body>
 <header class="nav"><div class="wrap nav-in">
 <a class="logo" href="#beranda">vii<span>store</span>.id</a>
 <button class="burger" id="burger" aria-label="Menu">☰</button>
 <nav class="menu" id="menu">
-<a href="#rekber">Apa itu Rekber</a><a href="#alur">Alur</a><a href="#fee">List Fee</a><a href="#pembayaran">Pembayaran</a><a href="#faq">FAQ</a>
+<a href="#alur">Cara Rekber</a><a href="#fee">List Fee</a><a href="#cek">Cek Akun</a><a href="#epep">Amanin ePeP</a><a href="#stok">Stok Akun</a><a href="#testi">Testi</a>
 <a class="btn btn-sm" href="https://wa.me/6285156195534" target="_blank" rel="noopener">Hubungi Admin</a>
 </nav></div></header>
 
@@ -19,82 +89,118 @@
 <p class="kick">Revi Sri Mega Azzahra</p>
 <h1>ADMIN <em>REKBER</em> &amp; TOKO GAME</h1>
 <p class="lead">Admin Rekber &amp; Toko Game terpercaya yang mengutamakan keamanan transaksi, proses cepat, dan pelayanan profesional untuk setiap pelanggan.</p>
-<div class="cta"><a class="btn" href="https://wa.me/6285156195534" target="_blank" rel="noopener">💬 WhatsApp Admin</a><a class="btn ghost" href="#fee">Lihat List Fee</a></div>
+<div class="cta"><a class="btn" href="https://wa.me/6285156195534" target="_blank" rel="noopener">💬 WhatsApp Admin</a><a class="btn ghost" href="#cek">🚨 Cek Akun Penipu</a></div>
 <p class="jam"><b>OPEN everyday</b> · 06.30 – 23.30</p>
 </div>
-<div class="hero-img"><img src="img/admin.jpg" alt="Revi Sri Mega Azzahra — Admin Rekber"><span class="wm">REVII</span></div>
+<div class="hero-img"><img src="https://ainft-chat.s3.ap-southeast-1.amazonaws.com/users/user_HrKUbReBEobR/files/496070/a451bea6-fd9f-409a-a2cc-d85421a14228.jpg" onerror="this.onerror=null;this.src='img/admin.jpg'" alt="Revi Sri Mega Azzahra — Admin Rekber"><span class="wm">REVII</span></div>
 </div></section>
 
-<section id="rekber"><div class="wrap">
-<h2>APA ITU <em>REKBER</em>?</h2>
-<p class="sub">Rekber (Rekening Bersama) adalah pihak ketiga terpercaya yang menahan dana &amp; item selama transaksi berlangsung, sehingga pembeli dan penjual sama-sama aman dari penipuan.</p>
-<div class="cards">
-<div class="card"><h3>🛡️ Aman</h3><p>Dana &amp; item dipegang admin sampai kedua pihak confirm DONE.</p></div>
-<div class="card"><h3>⚡ Cepat</h3><p>Proses transparan &amp; respons cepat di jam operasional.</p></div>
-<div class="card"><h3>🤝 Profesional</h3><p>Alur jelas, multichat, dan bukti transfer di setiap tahap.</p></div>
-</div></div></section>
-
 <section id="alur"><div class="wrap">
-<h2>CARA <em>TRANSAKSI</em></h2>
-<p class="sub">Ikuti alur pada poster berikut — <b>klik poster untuk memperbesar</b>. 👆</p>
+<h2>CARA <em>REKBER</em></h2>
+<p class="sub">Apa itu rekber &amp; bagaimana alurnya? Simak poster berikut — <b>klik poster untuk memperbesar</b>. 👆</p>
 <div class="gal">
-<figure data-img="img/poster-alur-1.jpg"><img src="img/poster-alur-1.jpg" alt="Poster apa itu rekber, alur langkah 1-8" loading="lazy"><figcaption>Apa itu Rekber? · Langkah 1–8</figcaption></figure>
-<figure data-img="img/poster-alur-2.jpg"><img src="img/poster-alur-2.jpg" alt="Poster lanjutan alur langkah 9-15" loading="lazy"><figcaption>Lanjutan · Langkah 9–15</figcaption></figure>
+<figure data-img="https://ainft-chat.s3.ap-southeast-1.amazonaws.com/users/user_HrKUbReBEobR/files/496070/96f2fdee-a039-43ef-99dd-a060b50cbc11.jpg"><img src="https://ainft-chat.s3.ap-southeast-1.amazonaws.com/users/user_HrKUbReBEobR/files/496070/96f2fdee-a039-43ef-99dd-a060b50cbc11.jpeg" onerror="this.onerror=null;this.src='img/poster-alur-1.jpg'" alt="Poster apa itu rekber, langkah 1-8" loading="lazy"><figcaption>Apa itu Rekber? · Langkah 1–8</figcaption></figure>
+<figure data-img="https://ainft-chat.s3.ap-southeast-1.amazonaws.com/users/user_HrKUbReBEobR/files/496070/ea02925d-da1a-407b-9dba-11ffbacd5233.jpeg" ><img src="https://ainft-chat.s3.ap-southeast-1.amazonaws.com/users/user_HrKUbReBEobR/files/496070/ea02925d-da1a-407b-9dba-11ffbacd5233.jpeg" onerror="this.onerror=null;this.src='img/poster-alur-2.jpg'" alt="Poster lanjutan alur langkah 9-15" loading="lazy"><figcaption>Lanjutan · Langkah 9–15</figcaption></figure>
 </div></div></section>
 
 <section id="fee"><div class="wrap">
 <h2>LIST FEE <em>REKBER</em></h2>
-<table class="fee"><thead><tr><th>Nominal Transaksi</th><th>Fee</th></tr></thead><tbody>
-<tr><td>1.000 – 49.000</td><td>3K</td></tr>
-<tr><td>50.000 – 750.000</td><td>5K</td></tr>
-<tr><td>750.000 – 999.000</td><td>10K</td></tr>
-<tr><td>1.000.000 – 2.999.000</td><td>15K</td></tr>
-<tr><td>3.000.000 – seterusnya</td><td>0.7%</td></tr>
-</tbody></table>
-<p class="delay">Delay <b>Rp1.500 / hari</b> · OPEN everyday <b>06.30 – 23.30</b></p>
-<div class="gal" style="max-width:360px;margin:26px auto 0">
-<figure data-img="img/poster-fee.jpg"><img src="img/poster-fee.jpg" alt="Poster list fee rekber" loading="lazy"><figcaption>Poster List Fee — klik untuk memperbesar</figcaption></figure>
+<p class="sub">Delay <b>Rp1.500 / hari</b> · <b>klik poster untuk memperbesar</b>.</p>
+<div class="post">
+<figure data-img="https://ainft-chat.s3.ap-southeast-1.amazonaws.com/users/user_HrKUbReBEobR/files/496070/e62771f4-291a-454c-99b9-81cd1d13b3ff.jpeg"><img src="https://ainft-chat.s3.ap-southeast-1.amazonaws.com/users/user_HrKUbReBEobR/files/496070/e62771f4-291a-454c-99b9-81cd1d13b3ff.jpeg" onerror="this.onerror=null;this.src='img/poster-fee.jpg'" alt="Poster list fee rekber"></figure>
 </div></div></section>
 
-<section id="pembayaran"><div class="wrap">
-<h2>METODE <em>PEMBAYARAN</em></h2>
-<p class="sub">Local Transaction</p>
-<div class="chips"><span>QRIS</span><span>OVO</span><span>GoPay</span><span>DANA</span><span>Jago</span><span>SeaBank</span><span>BRI</span><span>Bank Transfer</span></div>
-<p class="sub">Inter Transaction</p>
-<div class="chips"><span>PayPal</span></div>
-</div></section>
+<section id="cek"><div class="wrap">
+<h2>CEK AKUN <em>BERBAHAYA</em></h2>
+<p class="sub">Curiga nomor HP / payment seseorang penipu? Isi form di bawah — laporan otomatis terbuka ke WhatsApp admin, lalu <b>kirim bukti screenshot</b> di chat tersebut.</p>
+<form class="frm" id="cekForm">
+<div><label for="nama">Nama kamu (opsional)</label><input id="nama" name="nama" type="text" placeholder="cth: Budi"></div>
+<div><label for="tipe">Tipe data yang dicek</label>
+<select id="tipe" name="tipe"><option>Nomor HP</option><option>DANA</option><option>OVO</option><option>GoPay</option><option>Rekening Bank</option><option>Akun Game</option><option>Lainnya</option></select></div>
+<div><label for="nomor">Nomor HP / payment / ID terduga *</label><input id="nomor" name="nomor" type="text" required placeholder="cth: 08xx-xxxx-xxxx / nomor DANA"></div>
+<div><label for="bukti">Kronologi / keterangan bukti</label><textarea id="bukti" name="bukti" placeholder="Ceritakan singkat: modus, chat mencurigakan, transaksi yang terjadi..."></textarea></div>
+<p class="note">📎 Setelah tombol ditekan, WhatsApp terbuka otomatis — lampirkan <b>screenshot bukti</b> (transfer / chat / profil) di chat itu ya.</p>
+<button class="btn" type="submit"> Kirim Laporan ke Admin</button>
+</form></div></section>
 
-<div class="lightbox" id="lightbox" hidden><img id="lb-img" alt="Poster"><button id="lb-close" aria-label="Tutup">✕</button></div>
-
-<section id="testimoni"><div class="wrap">
-<h2>TESTI<em>MONI</em></h2>
+<section id="epep"><div class="wrap">
+<h2>CARA AMANIN <em>ePeP</em></h2>
+<p class="sub">Biar akun &amp; payment kamu nggak diambil alih setelah transaksi.</p>
 <div class="cards">
-<div class="card"><p>"Transaksi aman, admin fast respon. Recommended!"</p><b>— Pembeli</b></div>
-<div class="card"><p>"Proses jelas dari awal sampai DONE, fee murah."</p><b>— Penjual</b></div>
-<div class="card"><p>"Sudah berkali-kali pakai jasa REVI, selalu amanah."</p><b>— Pelanggan</b></div>
-</div>
-<p class="sub">* ganti dengan testimoni / screenshot asli kamu.</p>
-</div></section>
+<div class="card"><h3>🔑 Ganti EP</h3><p>Segera ganti <b>email &amp; password</b> begitu akun jadi milikmu. Jangan pakai password lama.</p></div>
+<div class="card"><h3>📲 Aktifkan 2FA / PIN</h3><p>Nyalakan verifikasi dua langkah &amp; PIN payment; hapus perangkat lain yang tidak dikenal.</p></div>
+<div class="card"><h3>🚫 OTP = Rahasia</h3><p>Jangan pernah kasih kode OTP ke siapa pun — termasuk yang mengaku "admin".</p></div>
+<div class="card"><h3>🎣 Waspada Phishing</h3><p>Jangan klik link login dari orang asing; selalu ketik alamat resmi sendiri.</p></div>
+<div class="card"><h3>🤝 Pakai Rekber</h3><p>Jual-beli akun selalu lewat rekber terpercaya biar dana &amp; item sama-sama aman.</p></div>
+</div></div></section>
 
-<section id="faq"><div class="wrap">
-<h2>FAQ</h2>
-<details><summary>Jam operasional rekber?</summary><p>OPEN everyday 06.30 – 23.30.</p></details>
-<details><summary>Metode pembayaran apa saja?</summary><p>QRIS, OVO, GoPay, DANA, Jago, SeaBank, BRI, Bank Transfer, serta PayPal untuk transaksi internasional.</p></details>
-<details><summary>Berapa fee rekber?</summary><p>Mulai 3K sampai 0.7% sesuai nominal transaksi (lihat List Fee). Delay Rp1.500/hari.</p></details>
-<details><summary>Bagaimana cara transaksi?</summary><p>Lihat poster alur di section "Cara Transaksi" (klik untuk memperbesar), atau langsung hubungi admin via WhatsApp.</p></details>
-<details><summary>Kenapa harus hati-hati akun clone?</summary><p>Pastikan kontak resmi hanya yang tercantum di website ini. Admin tidak bertanggung jawab atas transaksi di luar kontak resmi.</p></details>
+<section id="stok"><div class="wrap">
+<h2>SALURAN / INFO <em>STOK AKUN</em></h2>
+<p class="sub">Stok akun terbaru di-update rutin di saluran resmi admin.</p>
+<div class="cards">
+<div class="card"><h3>📢 Saluran Resmi</h3><p>Info stok akun &amp; restock harian.</p><a class="more" href="#" >Link saluran — segera diisi ⚠️</a></div>
+<div class="card"><h3>📸 Instagram</h3><p>Stok juga diposting di IG.</p><a class="more" href="https://instagram.com/Reevvy_" target="_blank" rel="noopener">@Reevvy_ ↗</a></div>
+<div class="card"><h3>🎬 TikTok</h3><p>Update.video &amp; stok.</p><a class="more" href="https://tiktok.com/@Revii_03" target="_blank" rel="noopener">Revii_03 ↗</a></div>
+</div></div></section>
+
+<section id="jual"><div class="wrap">
+<h2>JUAL AKUN <em>KESINI</em></h2>
+<p class="sub">Mau jual akunmu? Langsung hubungi admin — proses cepat &amp; aman via rekber.</p>
+<div class="post card" style="max-width:560px">
+<h3>💰 Cara jual akun</h3>
+<ul class="tips" style="margin:10px 0 18px">
+<li><b>Siapkan detail akun</b> (game/tipe, spek, level).</li>
+<li><b>Screenshot bukti kepemilikan</b> (tanpa sensor email awal).</li>
+<li><b>Tentukan harga</b>, admin bantu proses sampai DONE.</li>
+</ul>
+<a class="btn" href="https://wa.me/6285156195534?text=Halo%20admin%20REVI%2C%20aku%20mau%20jual%20akun%20ini%3A%0A%E2%80%A2%20Game%2FTipe%3A%20%0A%E2%80%A2%20Spesifikasi%3A%20%0A%E2%80%A2%20Harga%3A%20" target="_blank" rel="noopener">🏷️ Jual Akun ke Admin</a>
+</div></div></section>
+
+<section id="testi"><div class="wrap">
+<h2>TESTI <em>REKBER &amp; JUAL AKUN</em></h2>
+<div class="cards">
+<div class="card"><p>"Transaksi rekber aman, admin fast respon. Recommended!"</p><b>— Testi Rekber</b></div>
+<div class="card"><p>"Beli akun di REVI, data lengkap &amp; dibantu amanin akun sampai beres."</p><b>— Testi Beli Akun</b></div>
+<div class="card"><p>"Jual akun lewat REVI, pembayaran cepat nggak pakai ribet."</p><b>— Testi Jual Akun</b></div>
+</div>
+<p class="sub" style="margin-top:22px">* ganti dengan screenshot testimoni asli kamu.</p>
 </div></section>
 
 <footer id="kontak"><div class="wrap">
-<h2>HUBUNGI <em>ADMIN</em></h2>
-<div class="cards contact">
-<a class="card" href="https://wa.me/6285156195534" target="_blank" rel="noopener"><b>WhatsApp</b><span>085156195534</span></a>
-<a class="card" href="https://instagram.com/Reevvy_" target="_blank" rel="noopener"><b>Instagram</b><span>@Reevvy_</span></a>
-<a class="card" href="https://tiktok.com/@Revii_03" target="_blank" rel="noopener"><b>TikTok</b><span>Revii_03</span></a>
-<a class="card" href="#"><b>Facebook</b><span>Revi Sri Mega Azzahra</span></a>
+<h2>INFO KONTAK <em>&amp; FEE</em></h2>
+<p class="sub">OPEN everyday <b>06.30 – 23.30</b> · Fee mulai <b>3K</b> s/d <b>0.7%</b> (detail lihat poster List Fee) · Delay <b>Rp1.500/hari</b></p>
+<div class="cards">
+<a class="card" href="https://wa.me/6285156195534" target="_blank" rel="noopener"><h3>WhatsApp</h3><p>085156195534</p></a>
+<a class="card" href="https://instagram.com/Reevvy_" target="_blank" rel="noopener"><h3>Instagram</h3><p>@Reevvy_</p></a>
+<a class="card" href="https://tiktok.com/@Revii_03" target="_blank" rel="noopener"><h3>TikTok</h3><p>Revii_03</p></a>
+<a class="card" href="#"><h3>Facebook</h3><p>Revi Sri Mega Azzahra</p></a>
 </div>
-<p class="copy">© 2026 viistore.id — Revi Sri Mega Azzahra.</p>
+<p class="copy">© 2026 viistore.id — Revi Sri Mega Azzahra. Hati-hati akun clone, kontak resmi hanya di halaman ini.</p>
 </div></footer>
-<script src="js/script.js"></script>
+
+<div class="lightbox" id="lightbox" hidden><img id="lb-img" alt="Poster"><button id="lb-close" aria-label="Tutup">✕</button></div>
+
+<script>
+(function(){
+"use strict";
+var burger=document.getElementById("burger"),menu=document.getElementById("menu");
+if(burger&&menu){burger.addEventListener("click",function(){menu.classList.toggle("open");});menu.querySelectorAll("a").forEach(function(a){a.addEventListener("click",function(){menu.classList.remove("open");});});}
+var lb=document.getElementById("lightbox"),lbImg=document.getElementById("lb-img"),lbClose=document.getElementById("lb-close");
+function openLB(src){lbImg.src=src;lb.hidden=false;document.body.style.overflow="hidden";}
+function closeLB(){lb.hidden=true;lbImg.src="";document.body.style.overflow="";}
+document.querySelectorAll("figure[data-img]").forEach(function(f){f.addEventListener("click",function(){openLB(f.getAttribute("data-img"));});});
+if(lbClose)lbClose.addEventListener("click",closeLB);
+if(lb)lb.addEventListener("click",function(e){if(e.target===lb)closeLB();});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")closeLB();});
+var io=("IntersectionObserver"in window)?new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add("on");io.unobserve(en.target);}});},{threshold:.12}):null;
+document.querySelectorAll("section .wrap > *, footer .wrap > *").forEach(function(el){el.classList.add("reveal");if(io)io.observe(el);else el.classList.add("on");});
+var f=document.getElementById("cekForm");
+if(f)f.addEventListener("submit",function(e){e.preventDefault();
+var n=f.nomor.value.trim();if(!n){alert("Isi nomor/ID yang mau dicek dulu ya.");return;}
+var msg="🚨 LAPOR CEK AKUN BERBAHAYA 🚨\n• Nama pelapor: "+(f.nama.value.trim()||"-")+"\n• Tipe data: "+f.tipe.value+"\n• Nomor/ID terduga: "+n+"\n• Kronologi/catatan: "+(f.bukti.value.trim()||"-")+"\n\n(bukti screenshot menyusul di chat ini)";
+window.open("https://wa.me/6285156195534?text="+encodeURIComponent(msg),"_blank");});
+})();
+// AKHIR FILE
+</script>
 </body></html>
 <!-- AKHIR FILE -->
